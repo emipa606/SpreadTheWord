@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <STW.ConvertMessage>You need to convert people leaving the map in order to spread the word of your ideoligion.</STW.ConvertMessage>
+  <STW.BaseSettings>-----Base Game Settings-----</STW.BaseSettings>
+  <STW.BaseNeededGoodwill>Base goodwill needed: {0}</STW.BaseNeededGoodwill>
+  <STW.ComplexCalculation>Enable complex calculation of pawns needing conversion</STW.ComplexCalculation>
+  <STW.ComplexCalculationTT>Complex calculation takes into consideration the number of settlements the faction has. Calculation is the number needed (from slider) multiplied by the amount of colonies of that faction.</STW.ComplexCalculationTT>
+  <STW.PeopleToConvert># of people to release to convert faction: {0}</STW.PeopleToConvert>
+  <STW.CurrentModVersion>Installed mod-version: {0}</STW.CurrentModVersion>
+  <STW.ConversionLetterTitle>Ideoligion Conversion</STW.ConversionLetterTitle>
+  <STW.ConversionLetterMessage>{0} has been converted to your ideoligion.</STW.ConversionLetterMessage>
+  <STW.ConversionLetterDetail>You converted {0} out of {1} of {2}.</STW.ConversionLetterDetail>
+</LanguageData>
