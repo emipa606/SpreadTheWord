@@ -9,13 +9,13 @@ namespace SpreadTheWord;
 [StaticConstructorOnStartup]
 public class SpreadTheWordMod : Mod
 {
-    public static SpreadTheWordSettings settings;
+    public static SpreadTheWordSettings Settings;
     private static string currentVersion;
 
     public SpreadTheWordMod(ModContentPack content) : base(content)
     {
         new Harmony("crazedmonkey231.spread.the.word").PatchAll(Assembly.GetExecutingAssembly());
-        settings = GetSettings<SpreadTheWordSettings>();
+        Settings = GetSettings<SpreadTheWordSettings>();
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
@@ -26,14 +26,14 @@ public class SpreadTheWordMod : Mod
         listingStandard.Gap();
         listingStandard.Label("STW.BaseSettings".Translate());
         listingStandard.Gap();
-        listingStandard.Label("STW.BaseNeededGoodwill".Translate(settings.baseGoodwillNeeded));
-        settings.baseGoodwillNeeded = (int)listingStandard.Slider(settings.baseGoodwillNeeded, -100f, 100f);
+        listingStandard.Label("STW.BaseNeededGoodwill".Translate(Settings.BaseGoodwillNeeded));
+        Settings.BaseGoodwillNeeded = (int)listingStandard.Slider(Settings.BaseGoodwillNeeded, -100f, 100f);
         listingStandard.Gap();
-        listingStandard.CheckboxLabeled("STW.ComplexCalculation".Translate(), ref settings.enableComplexCalculation,
+        listingStandard.CheckboxLabeled("STW.ComplexCalculation".Translate(), ref Settings.EnableComplexCalculation,
             "STW.ComplexCalculationTT".Translate());
         listingStandard.Gap();
-        listingStandard.Label("STW.PeopleToConvert".Translate(settings.numberToRelease));
-        settings.numberToRelease = (int)listingStandard.Slider(settings.numberToRelease, 1f, 1000f);
+        listingStandard.Label("STW.PeopleToConvert".Translate(Settings.NumberToRelease));
+        Settings.NumberToRelease = (int)listingStandard.Slider(Settings.NumberToRelease, 1f, 1000f);
         if (currentVersion != null)
         {
             listingStandard.Gap();

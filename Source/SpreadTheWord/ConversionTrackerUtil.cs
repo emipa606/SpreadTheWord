@@ -14,11 +14,11 @@ public static class ConversionTrackerUtil
 
     public static int InsertThenGetStat(string key, int value)
     {
-        AddStat(key, value);
+        addStat(key, value);
         return GetStat(key);
     }
 
-    public static void AddStat(string key, int value)
+    private static void addStat(string key, int value)
     {
         if (isInitialized())
         {

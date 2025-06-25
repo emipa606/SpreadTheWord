@@ -15,20 +15,20 @@ public static class StatsFactionUtil
 
         var key = other.Name;
         var currVal = ConversionTrackerUtil.InsertThenGetStat(key, 1);
-        CheckFactionConversion(other, player, key, currVal);
+        checkFactionConversion(other, player, key, currVal);
     }
 
-    private static void CheckFactionConversion(Faction other, Faction player, string key, int currVal)
+    private static void checkFactionConversion(Faction other, Faction player, string key, int currVal)
     {
-        var numToRelease = SpreadTheWordMod.settings.numberToRelease;
+        var numToRelease = SpreadTheWordMod.Settings.NumberToRelease;
 
-        if (SpreadTheWordMod.settings.enableComplexCalculation)
+        if (SpreadTheWordMod.Settings.EnableComplexCalculation)
         {
             numToRelease *= Find.World.GetComponent<FactionConversionWorldComponent>().getFactionCountOnWorld(other);
         }
 
         if (currVal >= numToRelease &&
-            player.RelationWith(other).baseGoodwill >= SpreadTheWordMod.settings.baseGoodwillNeeded)
+            player.RelationWith(other).baseGoodwill >= SpreadTheWordMod.Settings.BaseGoodwillNeeded)
         {
             ConversionTrackerUtil.Reset(key);
             Find.FactionManager.FirstFactionOfDef(other.def).ideos.SetPrimary(player.ideos.PrimaryIdeo);
@@ -37,7 +37,7 @@ public static class StatsFactionUtil
                 other.Named(HistoryEventArgsNames.AffectedFaction),
                 goodwillChange.Named(HistoryEventArgsNames.CustomGoodwill)));
             Find.FactionManager.goodwillSituationManager.RecalculateAll(false);
-            SendLetter(other);
+            sendLetter(other);
         }
         else
         {
@@ -47,7 +47,7 @@ public static class StatsFactionUtil
     }
 
     //Send letter the ideo has changed
-    private static void SendLetter(Faction other)
+    private static void sendLetter(Faction other)
     {
         var letterTitle = "STW.ConversionLetterTitle".Translate();
         var letterLabel = "STW.ConversionLetterTitle".Translate();

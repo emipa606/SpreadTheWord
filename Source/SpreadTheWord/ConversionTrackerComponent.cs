@@ -5,11 +5,10 @@ namespace SpreadTheWord;
 
 public class ConversionTrackerComponent : MapComponent
 {
-    public Dictionary<string, int> entries = new Dictionary<string, int>();
+    public Dictionary<string, int> entries = new();
 
     public ConversionTrackerComponent(Map map) : base(map)
     {
-        this.map = map;
     }
 
     public void AddEntry(string key, int value)

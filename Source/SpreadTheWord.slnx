@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="SpreadTheWord/SpreadTheWord.csproj" />
+</Solution>

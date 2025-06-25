@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: convert then release -->
+  <ConvertThenRelease.label>convert then release</ConvertThenRelease.label>
+  <!-- EN: Wardens will attempt to convert the prisoner to their ideoligion. Then the warden will instruct them to be released as a missionary for your colony and will spread the word of your ideoligion. -->
+  <ConvertThenRelease.description>Wardens will attempt to convert the prisoner to their ideoligion. Then the warden will instruct them to be released as a missionary for your colony and will spread the word of your ideoligion.</ConvertThenRelease.description>
+</LanguageData>

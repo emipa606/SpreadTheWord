@@ -4,15 +4,15 @@ namespace SpreadTheWord;
 
 public class SpreadTheWordSettings : ModSettings
 {
-    public int baseGoodwillNeeded = 100;
-    public bool enableComplexCalculation;
-    public int numberToRelease = 25;
+    public int BaseGoodwillNeeded = 100;
+    public bool EnableComplexCalculation;
+    public int NumberToRelease = 25;
 
     public override void ExposeData()
     {
-        Scribe_Values.Look(ref enableComplexCalculation, "enableComplexCalculation");
-        Scribe_Values.Look(ref numberToRelease, "numberToRelease");
-        Scribe_Values.Look(ref baseGoodwillNeeded, "baseGoodwillNeeded");
+        Scribe_Values.Look(ref EnableComplexCalculation, "enableComplexCalculation");
+        Scribe_Values.Look(ref NumberToRelease, "numberToRelease");
+        Scribe_Values.Look(ref BaseGoodwillNeeded, "baseGoodwillNeeded");
         base.ExposeData();
     }
 }
