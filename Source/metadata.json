@@ -4,6 +4,12 @@
   "CanRemove": "0",
   "SocialImageSet": true,
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-06-25T21:49:13.6425022+02:00",
-  "SearchTags": " influence"
+  "LastXmlCleaning": "2025-09-13T20:45:22.6289128+02:00",
+  "SearchTags": " influence",
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 14896,
+  "LinesOfXML": 1456,
+  "CodeBaseSize": 66
 }

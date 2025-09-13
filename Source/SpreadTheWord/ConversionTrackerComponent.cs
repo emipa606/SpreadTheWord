@@ -1,36 +1,34 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace SpreadTheWord;
 
 public class ConversionTrackerComponent : MapComponent
 {
-    public Dictionary<string, int> entries = new();
+    private Dictionary<string, int> entries = new();
 
+    // Legacy component, not sure why they had it as a map-component
     public ConversionTrackerComponent(Map map) : base(map)
     {
     }
 
-    public void AddEntry(string key, int value)
+    public override void FinalizeInit()
     {
-        if (!entries.TryAdd(key, value))
+        base.FinalizeInit();
+        if (!entries.Any())
         {
-            entries[key] += value;
+            return;
         }
+
+        foreach (var entry in entries)
+        {
+            ConversionTrackerUtil.AddStat(entry.Key, entry.Value);
+        }
+
+        entries.Clear();
     }
 
-    public int GetEntry(string key)
-    {
-        return entries.GetValueOrDefault(key, 0);
-    }
-
-    public void Reset(string key)
-    {
-        if (entries.ContainsKey(key))
-        {
-            entries[key] = 0;
-        }
-    }
 
     public override void ExposeData()
     {

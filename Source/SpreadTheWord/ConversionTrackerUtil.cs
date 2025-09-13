@@ -14,11 +14,11 @@ public static class ConversionTrackerUtil
 
     public static int InsertThenGetStat(string key, int value)
     {
-        addStat(key, value);
+        AddStat(key, value);
         return GetStat(key);
     }
 
-    private static void addStat(string key, int value)
+    public static void AddStat(string key, int value)
     {
         if (isInitialized())
         {
@@ -33,11 +33,11 @@ public static class ConversionTrackerUtil
 
     private static bool isInitialized()
     {
-        return Find.CurrentMap.GetComponent<ConversionTrackerComponent>() != null;
+        return getComp() != null;
     }
 
-    private static ConversionTrackerComponent getComp()
+    private static FactionConversionWorldComponent getComp()
     {
-        return Find.CurrentMap.GetComponent<ConversionTrackerComponent>();
+        return Find.World.GetComponent<FactionConversionWorldComponent>();
     }
 }
