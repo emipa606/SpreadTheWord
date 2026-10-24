@@ -6,4 +6,17 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="SpreadTheWord/SpreadTheWord.csproj" />
+  <Folder Name="/XML/1.7/Defs/PrisonerInteractionModeDefs/">
+    <File Path="../1.7/Defs/PrisonerInteractionModeDefs/PrisonerInteractionMode.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Misc/HistoryAutoRecording/">
+    <File Path="../1.7/Defs/Misc/HistoryAutoRecording/HistoryAutoRecorderGroups.xml" />
+    <File Path="../1.7/Defs/Misc/HistoryAutoRecording/HistoryAutoRecorders.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Text.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
 </Solution>

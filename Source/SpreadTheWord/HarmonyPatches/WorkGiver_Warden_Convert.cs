@@ -9,7 +9,7 @@ namespace SpreadTheWord.HarmonyPatches;
 [HarmonyPatch]
 public static class WorkGiver_Warden_Convert
 {
-    private static IEnumerable<MethodBase> TargetMethods()
+    public static IEnumerable<MethodBase> TargetMethods()
     {
         yield return AccessTools.Method(typeof(RimWorld.WorkGiver_Warden_Convert),
             nameof(RimWorld.WorkGiver_Warden_Convert.HasJobOnThing));

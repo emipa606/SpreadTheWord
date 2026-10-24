@@ -14,14 +14,13 @@ public class FactionConversionWorldComponent : WorldComponent
         this.world = world;
     }
 
-    public Dictionary<string, int> Entries
+    private Dictionary<string, int> Entries
     {
         get
         {
             entries ??= [];
             return entries;
         }
-        set => entries = value;
     }
 
     public int getFactionCountOnWorld(Faction faction)

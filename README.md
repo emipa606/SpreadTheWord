@@ -1,14 +1,14 @@
 # [Spread The Word (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3287847068)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of crazedmonkey231s mod https://steamcommunity.com/sharedfiles/filedetails/?id=2829387657
 
 - Opened the strings for translation
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 A couple of simple harmony patches that aims to convert other factions to your ideoligion. Each factor can be controlled in settings. The conditions that must be met is anything the game considers eligible for goodwill currently this is medical treatment/releasing prisoners and both times the pawn must leave converted to your factions primary ideoligion in order to count towards the faction conversion count. Get to the max count along with above or at the configured goodwill amount and the faction converts over to your ideoligion.
 
@@ -30,13 +30,13 @@ Seemed fine adding and removing mid game, small error on startup when removed bu
 Did some basic testing, but let me know if you encounter something.
 Have suggestions? Feel free to drop a note.
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -44,4 +44,4 @@ Have suggestions? Feel free to drop a note.
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/SpreadTheWord?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3287847068) | tags:  influence
+[![Image](https://img.shields.io/github/v/release/emipa606/SpreadTheWord?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3287847068) | influence
